@@ -1,5 +1,6 @@
-//LABORATORUL 1 EX 1--Nr. pozitive sau negative
-
+//LABORATORUL 1
+// Exercitiu 1--Nr. pozitive sau negative
+/*
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -17,4 +18,45 @@ public class Main {
         }
 
     }
+}*/
+
+//------------------------------------------------------------------
+//Exercitiu 2--media elem  matricei
+/*
+
+public class Main {
+    public static void main(String[] args) {
+        int [] nr = new int[]{10,20,30,40,-15};
+
+        int suma  = 0;
+
+        for(int i = 0; i < nr.length; ++i){
+            suma  += nr[i];
+        }
+        double media = suma / nr.length;
+
+        System.out.println("Media elementelor matrice este: " + media);
+    }
+}*/
+//-----------------------------------------------------------------------
+//Exercitiu 4 --concept de incapsulare-Animal
+
+public class Main{
+
+    public static void main(String[] args) {
+        Animal pisica = new Animal("Azul","British Shorthair",3);
+
+        System.out.println("Nume: " + pisica.getNume());
+        System.out.println("Specie: " + pisica.getSpecie());
+        System.out.println("Varsta: " + pisica.getVarsta());
+
+        pisica.setNume("Luna");
+        pisica.setSpecie("Siameza");
+        pisica.setVarsta(5);
+
+        System.out.println("Nume: " + pisica.getNume());
+        System.out.println("Specie: " + pisica.getSpecie());
+        System.out.println("Varsta: " + pisica.getVarsta());
+    }
 }
+
